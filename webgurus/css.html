@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #4BACC6;
+    }
+    nav {
+      background-color: #4BACC6.;
+      color: red;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 0px;
+      border-bottom: 2px solid #ddd;
+    }
+
+    .logo {
+      max-width: 200px;
+    }
+
+    .menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-left: -10px;
+    }
+
+    .menu li {
+      margin-right: 10px;
+      background-color: #f5f5f5;
+      border:2px solid blue;
+      border-radius: 7px;
+      padding:5px 10px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: red;
+      cursor: pointer;
+    }
+    .home-link a {
+      color: red;
+    }
+
+
+    #welcome-screen {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><img href="#"><img src="css/logo web design.png"></img></div>
+  <ul class="menu">
+    <li id="home-link"><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<div id="welcome-screen">
+	 <h2>Welcome Home!</h2>
+</div>
+
+<script>
+  document.getElementById('home-link').addEventListener('click', function() {
+    var welcomeScreen = document.getElementById('welcome-screen');
+    welcomeScreen.style.display = welcomeScreen.style.display === 'none' ? 'block' : 'none';
+  });
+</script>
+</script>
+</body>
+</html>
+
+o
