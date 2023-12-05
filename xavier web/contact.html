@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <section id="navbar">
+        <nav>
+          <div class="logo">
+            <img src="logo12.png" alt="Logo">
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+      <section>
+        <form id="myForm">
+            <div>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="button" id="submitBtn">Submit</button>
+          </form>
+          <script>
+            const submitBtn = document.getElementById("submitBtn");
+            const myForm = document.getElementById("myForm");
+          
+            submitBtn.onclick = function() {
+              // perform form submission
+              myForm.submit();
+          
+              // show success message in popup
+              alert("Your form has been submitted successfully!");
+            };
+          </script>
+      </section>
+      <section>
+        <footer class="footer">
+          <div class="footer-content">
+              <div class="row">
+                  <div class="footer-col">
+                      <ul id="col-bottom" >
+                          <img src="logo12.png" style="width: 150px; height: 100px; 
+                          align-items: center;" alt="image">
+                          <br>
+                          <li><a href="tel:0757590917">0757590917</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-col1">
+                      <h4 class="h4">Hire me</h4>
+                      <ul>
+                          <li><a href="chepkemoixavier.com">chepkemoixavier@gmail.com</a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-col2">
+                      <h4 class="h4">Location</h4>
+                      <ul>
+                          <a href="https://www.google.com/xavs">
+                          <i class="fa fa-map-marker"></i></a>
+                          <li><a href="#">843-00232</a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-col3">
+                      <h4 class="h4">Follow me</h4>
+                      <div class="social-links">                  
+                          <a href="xavs">
+                            <i class="fab fa-facebook"></i></a>
+                          <a href="xavier_kenya"><i class="fab fa-twitter"></i></a>
+                          <a href="xavierwonders_tabernacle_church_/?hl=en"><i class="fab fa-instagram"></i></a>
+                          <a href="xavierwonderstelevision"><i class="fab fa-youtube"></i></a>
+                          <a href="xavierwonderstelevision" class="github"><i class="fabgithub"></i></a>
+                      </div>
+                  </div>
+              </div>
+          <div class="footer-bottom">
+              &copy;home| Designed by Fanxavier|All rights Reserved
+    
+      </footer>
+    </section>
+</body>
+</html>
